@@ -8,16 +8,12 @@ class Dot implements Comparable<Dot> {
         this.z = z;
     }
     public int compareTo(Dot dot) {
-        if(((this.x-dot.x)+(this.y-dot.y))==0) {
+        if((Math.abs(this.x)+Math.abs(this.y)==Math.abs(dot.x)+Math.abs(dot.y))) {
             return this.z - dot.z;
-        } 
-        else if(this.x - dot.x < 0) {
-            if(this.y - dot.y < 0) {
-                return ((this.x-dot.x)*-1) + ((this.y-dot.y)*-1);
-            }
-            return ((this.x-dot.x)*-1) + this.y - dot.y;
         }
-        return (this.x - dot.x) + (this.y - dot.y);
+        else {
+            return ((Math.abs(this.x)+Math.abs(this.y)) -(Math.abs(dot.x)+Math.abs(dot.y)));
+        }
     }
 }
 public class Main {
