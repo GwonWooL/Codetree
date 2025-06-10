@@ -10,6 +10,9 @@ public class Main {
             day = str[m1] - d1 + d2+1;
             total = day;
         }
+        else if(m1==m2) {
+            total = d2-d1+1;
+        }
         else {
             for(int i = m1+1; i<m2; i++) {
                 sum+=str[i];
