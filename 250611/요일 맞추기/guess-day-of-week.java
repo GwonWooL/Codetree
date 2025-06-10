@@ -13,7 +13,7 @@ public class Main {
             System.out.print(str[sum]);
         }
         else if(m2 == m1+1) {
-            day = arr[m1]-d1 + 1 + d2;
+            day = arr[m1]-d1 + d2;
             total = day;
             sum = (total % 7 + 7) % 7;
             System.out.print(str[sum]);
@@ -24,7 +24,7 @@ public class Main {
             for(int i = m1+1; i<m2; i++) {
                 sum1 += arr[i];
             }
-            day = arr[m1]-d1 + 1 + d2;
+            day = arr[m1]-d1 + d2;
             total = day+sum1;
             sum = (total % 7 + 7) % 7;
             System.out.print(str[sum]);
