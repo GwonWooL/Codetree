@@ -25,7 +25,7 @@ public class Main {
                 sum1 += arr[i];
             }
             day = arr[m1]-d1 + 1 + d2;
-            total = day;
+            total = day+sum1;
             sum = (total % 7 + 7) % 7;
             System.out.print(str[sum]);
         }
