@@ -39,7 +39,7 @@ public class Main {
                 sum2 += arr[i];
             }
             day = arr[m2]-d2 + d1;
-            total = day;
+            total = day+sum2;
             sum = (total % 7 + 7) % 7;
             System.out.print(str1[sum]);
         }
