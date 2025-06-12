@@ -6,11 +6,20 @@ public class Main {
         int arr[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         int day = 0; int total= 0; int sum = 0;
         String str[] = {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
+        String str1[] = {"Mon", "Sun", "Sat", "Fri", "Thu", "Wed", "Tue"};
         if(m2==m1) {
-            day = d2 - d1;
-            total = day;
-            sum = (total % 7 + 7) % 7;
-            System.out.print(str[sum]);
+            if(d2>=d1) {
+                day = d2 - d1;
+                total = day;
+                sum = (total % 7 + 7) % 7;
+                System.out.print(str[sum]);
+            }
+            else {
+                day = d1 - d2;
+                total = day;
+                sum = (total % 7 + 7) % 7;
+                System.out.print(str1[sum]);
+            }
         }
         else if(m2 == m1+1) {
             day = arr[m1]-d1  + d2;
@@ -19,10 +28,10 @@ public class Main {
             System.out.print(str[sum]);
         }
         else if(m2+1 == m1) {
-            day = arr[m2]-d2  + d2;
+            day = arr[m2]-d2  + d1;
             total = day;
             sum = (total % 7 + 7) % 7;
-            System.out.print(str[sum]);
+            System.out.print(str1[sum]);
         }
         else if(m2+1 < m1) {
             int sum2 = 0;
@@ -32,7 +41,7 @@ public class Main {
             day = arr[m2]-d2 + d1;
             total = day;
             sum = (total % 7 + 7) % 7;
-            System.out.print(str[sum]);
+            System.out.print(str1[sum]);
         }
         else {  
             int sum1 = 0;
