@@ -7,22 +7,23 @@ public class Main {
         int count = 0;
         if(b==4) {
             while(true) {
-                arr[count++] = n%4;
-                n = n/4;
                 if(n<4) {
                     arr[count++] = n%4;
                     break;
                 }
+                arr[count++] = n%4;
+                n = n/4;
             }
         }
         else {
             while(true) {
-                arr[count++] = n%8;
-                n = n/8;
+                
                 if(n<8) {
                     arr[count++] = n%8;
                     break;
                 }
+                arr[count++] = n%8;
+                n = n/8;
             }
         }
         for(int i = count-1; i>=0; i--) {
