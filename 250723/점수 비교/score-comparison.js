@@ -9,4 +9,9 @@ let numB = input[1].split(" ").map(Number)
 let bMath = numB[0]
 let bEng = numB[1]
 
-console.log(aMath > bMath ? 1:0)
+if(aMath > bMath && aEng > bEng) {
+    console.log(1)
+}
+else {
+    console.log(0)
+}
