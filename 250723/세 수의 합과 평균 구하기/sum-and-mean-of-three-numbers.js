@@ -5,6 +5,6 @@ let a = input[0]
 let b = input[1]
 let c = input[2]
 
-let avg = (a+b+c)/3
+let avg = parseInt((a+b+c)/3)
 
-console.log(`${a+b+c}\n${avg.toFixed(0)}`)
+console.log(`${a+b+c}\n${avg}`)
