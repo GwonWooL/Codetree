@@ -9,3 +9,6 @@ let second_A = Number(second[0]), second_S = second[1]
 if((first_A >= 19 || second_A >= 19)&&(first_S=='M')||second_S=='M') {
     console.log(1)
 }
+else {
+    console.log(0)
+}
