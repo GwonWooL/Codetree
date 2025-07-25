@@ -16,7 +16,7 @@ for(let i = n; i>1; i--) {
     for(let j = i; j<=n; j++) {
         star+=" "
     }
-    for(let k = 2*i-1; k>=n; k--) {
+    for(let k = n; k<=2*i-1; k++) {
         star+="*"
     }
     console.log(star)
