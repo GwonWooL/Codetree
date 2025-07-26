@@ -16,5 +16,5 @@ else if(avg>=3.0) {
     console.log(`${avg.toFixed(1)}\nGood`)
 }
 else {
-    console.log(`${avg.toFixed(1)}\nPerfect`)
+    console.log(`${avg.toFixed(1)}\nPoor`)
 }
